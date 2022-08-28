@@ -1,0 +1,17 @@
+<!--pages/v1/video/video.wxml-->
+
+
+
+
+<view class="video">
+    <video src="{{url}}" title="true" enable-auto-rotation="true" style="width:760rpx;" autoplay="true"></video>
+</view>
+<view class="title">
+    <text>{{title}}</text>
+</view>
+<view style="height: 50rpx;"></view>
+<view class="detail">
+<rich-text style="font-weight: bolder;">简介：</rich-text>
+    <rich-text class="detailtext">{{detail}}</rich-text>
+</view>
+

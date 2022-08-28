@@ -1,0 +1,34 @@
+/* pages/like/index.wxss */
+page {
+  background-color: #f3f4f6;
+}
+.essays_item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.essays_item .essays_img_wrap {
+  width: 70%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+}
+.essays_item .essays_img_wrap image {
+  width: 70%;
+}
+.essays_item .essays_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.essays_item .essays_info_wrap .essays_title {
+  font-family: cursive;
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #000;
+}
+.essays_item .essays_info_wrap .essays_src {
+  color: #dedede;
+}

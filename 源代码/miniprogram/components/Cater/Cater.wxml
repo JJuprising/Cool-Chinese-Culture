@@ -1,0 +1,8 @@
+
+<view>
+<scroll-view class="tab-list" scroll-x scroll-with-animation>
+<view wx:for="{{tabs}}" wx:key="id" class="tab-item {{item.isActive ? 'active':''}}" 
+    data-index="{{index}}" bindtap="handleItemTap">{{item.name}}</view>
+</scroll-view>
+<slot></slot>    
+</view>   

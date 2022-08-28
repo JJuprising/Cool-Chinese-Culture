@@ -1,0 +1,44 @@
+
+/* .cater .cater_container {
+  display: flex;
+}
+.cater .cater_container .top_menu {
+  height: 80rpx;
+  width: 100%;
+  background-color: #fbf0ee;
+  white-space: nowrap;
+}
+.cater .cater_container .top_menu .cater_top_menu {
+  display: inline-block;
+  width: 140rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 40rpx;
+}
+.cater .cater_container .below_menu {
+  height: '~calc(100vh-90rpx)';
+  flex: 10;
+  background-color: white;
+} */
+.tab-list {
+  width: 100%;
+  height: 88rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: inline-block;
+  white-space: nowrap;
+   
+  }
+   
+  .tab-item {
+  width: 188rpx;
+  height: 85rpx;
+  display: inline-block;
+  line-height: 85rpx;
+  vertical-align: middle;
+  text-align: center;
+  }
+   
+  .active {
+  color: red;
+  border-bottom: 5rpx solid red;
+  }

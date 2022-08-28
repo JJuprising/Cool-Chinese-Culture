@@ -1,0 +1,26 @@
+.button2{
+    background-color: palegreen;
+    border-radius: 40rpx;
+    height: 80rpx;
+    border:rgb(47, 255, 57) 5rpx solid;
+}
+.text{
+    border: 2rpx black solid;
+}
+.area{
+    background-color: rgba(211, 211, 211, 0.5);
+    width: auto;
+}
+.head{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    line-height: 1cm
+}
+.tip{
+    font-weight: lighter;
+    font-style: oblique;
+    text-align: center;
+}

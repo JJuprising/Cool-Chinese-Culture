@@ -1,0 +1,11 @@
+<!--pages/profile/functions/contact/contact.wxml-->
+<rich-text class="head">来这里和我们交流叭</rich-text>
+<rich-text class="tip">无论是意见还是建议，或者单纯是想表达自己的想法，都可以戳下面的按钮告诉我们喔!</rich-text>
+<view style="height: 100rpx;"></view>
+
+<block wx:if="{{doNewNote}}">
+        <input type="text" bindinput="getTitle" class="text" placeholder="这里输入标题.."/>
+        <textarea cols="50" rows="10" maxlength="500" class="area" bindinput="getContent" placeholder="这里输入内容.."></textarea>
+        <button bindtap="uploadNote" class="button2">提交！</button>
+</block>
+<button bindtap="newNote" class="button2" wx:else>戳我开启</button>

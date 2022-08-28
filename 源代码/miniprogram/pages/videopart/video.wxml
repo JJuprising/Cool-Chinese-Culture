@@ -1,0 +1,11 @@
+<!--pages/v1/v1.wxml-->
+<scroll-view class="board" scroll-y="true" >
+    <block wx:for="{{video}}" wx:key="num">
+    <navigator class="block" url="video/video?url={{item.url}}&detail={{item.detail}}&title={{item.title}}" open-type="navigate">
+        <image src="{{item.img}}" mode="aspectFill" class="image"></image>
+        <view class="head">{{item.title}}</view>
+    </navigator>
+    </block>
+</scroll-view>
+
+

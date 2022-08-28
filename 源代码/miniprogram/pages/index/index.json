@@ -1,0 +1,12 @@
+{
+  "usingComponents": {  
+    "cloud-tip-modal": "/components/cloudTipModal/index",
+    "Searchinput":"../../components/Searchinput/Searchinput",
+    "Cater":"../../components/Cater/Cater"
+  },
+  "navigationBarTitleText": "首页", 
+  "enablePullDownRefresh":true, 
+  "onReachBottomDistance":50, 
+  "backgroundColor": "#efefef", 
+  "backgroundTextStyle": "dark"
+}  

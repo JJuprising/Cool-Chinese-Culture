@@ -1,0 +1,57 @@
+/* pages/profile/functions/note/note.wxss */
+.head{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.note{
+    border: rgb(146, 146, 146) 4rpx solid;
+    height: 150rpx;
+    background-color: rgba(255, 181, 181, 0.493);
+}
+.delete{
+    width: 150rpx !important;
+    height: 60rpx ;
+    float: right;
+    border: 1rpx dotted black;
+    border-radius: 30rpx;
+    background-color: rgba(255, 0, 0, 0.377);
+    font-size: 25rpx;
+    text-align: center;
+}
+
+.title{
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+}
+.content{
+    width: 80% !important;
+    height: 110rpx;
+    background-color: rgba(140, 226, 255, 0.651);
+}
+.date{
+    color: rgb(163, 163, 163);
+    float: right;
+    font-weight: lighter;
+    font-size: smaller;
+}
+.text{
+    border: 2rpx black solid;
+}
+.area{
+    background-color: rgba(211, 211, 211, 0.5);
+    width: auto;
+}
+.button1{
+    background-color: rgba(255, 166, 0, 0.507);
+    border-radius: 40rpx;
+    height: 80rpx;
+    border:orange 5rpx solid;
+}
+.button2{
+    background-color: palegreen;
+    border-radius: 40rpx;
+    height: 80rpx;
+    border:rgb(47, 255, 57) 5rpx solid;
+}

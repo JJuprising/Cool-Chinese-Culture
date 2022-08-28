@@ -1,0 +1,44 @@
+.index_swiperh {
+  height: 500rpx;
+}
+.index_swiperh image {
+  height: 500rpx;
+  width: 100%;
+}
+.every_tab .essays_item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.every_tab .essays_item .essays_img_wrap {
+  width: 70%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+}
+.every_tab .essays_item .essays_img_wrap image {
+  width: 70%;
+}
+.every_tab .essays_item .essays_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.every_tab .essays_item .essays_info_wrap .essays_title {
+  font-family: cursive;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #000;
+}
+.every_tab .essays_item .essays_info_wrap .essays_src {
+  color: #c4c4c4;
+}
+.add_icon {
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 50rpx;
+  right: 35rpx;
+}

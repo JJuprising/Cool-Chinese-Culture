@@ -1,0 +1,31 @@
+<block wx:if="{{!hasUserInfo}}">
+    <view class="head">
+        <view style="height: 30rpx;"></view>
+        <view><image class="userinfo-avatar" mode="cover"></image></view>
+        
+        <view class="buttonplace">
+        <button bindtap="getUserProfile" class="button">点我登录</button>
+    </view>
+    </view>
+    
+  
+</block>
+<block wx:else>
+    <view class="head">
+        <view style="height: 30rpx;"></view>
+        <view><image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image></view>
+        <view style="height: 10rpx;"></view>
+        <view><text>{{userInfo.nickName}}</text></view>
+    </view>
+    <view class="grid-container">
+        <view class="grid-item2"><navigator url="functions/note/note?openId={{openId}}">笔记<view class="right_arrow"></view></navigator></view>
+        <view class="grid-item2"><navigator url="functions/rank/rank">排行<view class="right_arrow"></view>  </navigator></view>
+        <view class="grid-item2">
+            <navigator url="functions/contact/contact">联系我们<view class="right_arrow"></view>  </navigator>
+        </view>
+    </view>
+  
+    <rich-text style="font-size: xx-small; font-weight: lighter;color: gray; text-align: center;">下面的地方等以后再来探索叭</rich-text>
+</block>
+
+

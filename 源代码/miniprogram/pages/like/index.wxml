@@ -1,0 +1,17 @@
+<!--pages/like/index.wxml-->
+<view>
+    <navigator class="essays_item"
+                wx:for="{{collect}}"
+                wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id={{item.dessay_id}}">
+                    <!-- 左侧图片 -->
+                    <view class="essays_img_wrap">
+                        <image mode="widthFix" src="{{item.dessay_img}}"/>
+                    </view>
+                    <!-- 右侧标题 -->
+                    <view class="essays_info_wrap">
+                        <view class="essays_title">{{item.dessay_title}}</view>
+                        <view class="essays_src">{{item.dessay_src}}</view>
+                    </view>
+    </navigator>
+</view>

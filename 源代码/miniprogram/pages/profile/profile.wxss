@@ -1,0 +1,76 @@
+page {
+  background-color: #dedede;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: palevioletred 5rpx solid;
+
+
+}
+
+.head {
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+
+}
+
+
+
+.grid-item2 {
+ 
+  background-color: #f9f9f9;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 40rpx;
+  text-align: left;
+  height: 90rpx;
+
+}
+.grid-item2 navigator{
+  padding-left: 17rpx;
+}
+.button {
+  height: 100rpx;
+  border-radius: 50rpx;
+  width: 400rpx;
+  color: rgb(4, 0, 248);
+  background-color: rgba(0, 255, 13, 0.479);
+  font-size: larger;
+  text-align: center;
+  padding-top: 25rpx;
+}
+
+.buttonplace {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 500rpx;
+}
+
+.right_arrow {
+  background: url(https://s2.loli.net/2022/04/23/SrJ6Kukl8W1Cwz5.jpg) no-repeat;
+  width: 40rpx;
+  height: 40rpx;
+  /* display: inline-block; */
+  float: right
+}
+
+.icon {
+  width: 1em;
+  height: 1.3em;
+  fill: currentColor;
+  overflow: hidden;
+  vertical-align: center;
+
+}

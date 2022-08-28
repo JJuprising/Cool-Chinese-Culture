@@ -1,0 +1,128 @@
+
+<view class="pyg_index">
+    <!--搜索框  start-->
+    <Searchinput></Searchinput>
+    <!-- 搜索框 end -->
+
+    
+    <view>
+        <!-- 分类栏 start -->
+        <Cater tabs="{{tabs}}" binditemChange="handleItemChange"></Cater>
+        <!-- 分类栏 end -->
+        <block wx:if="{{tabs[0].isActive}}">
+             <!-- 轮播图 start -->
+                    <view>
+                        <swiper class="index_swiperh" autoplay interval="4000" circular> 
+                            <swiper-item>  
+                                <navigator wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id=29">
+                                    <image  src='https://s2.loli.net/2022/04/22/SQMFmkxDafi6bX1.png'></image> 
+                                </navigator>
+                            </swiper-item>
+                            <swiper-item>
+                                <navigator  wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id=26">
+                                    <image  src='https://s2.loli.net/2022/04/21/E9JpqB52vksoNun.png'></image>
+                                </navigator>
+                            </swiper-item> 
+                            <swiper-item>  
+                                <navigator wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id=8">
+                                    <image  src='https://s2.loli.net/2022/04/22/mugbnEshtCa7fN3.png'></image> 
+                                </navigator>
+                            </swiper-item>
+                            
+                        </swiper>
+                    </view>
+            <!-- 轮播图 end -->
+            <!-- 下方内容 start -->
+            <view class="every_tab">
+                <view wx:for="{{essayList}}" wx:for-item="" wx:key="item">
+                    <navigator class="essays_item"
+                wx:for="{{item.essays}}"
+                wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id={{item.dessay_id}}">
+                    <!-- 左侧图片 -->
+                    <view class="essays_img_wrap">
+                        <image mode="widthFix" src="{{item.dessay_img}}"/>
+                    </view>
+                    <!-- 右侧标题 -->
+                    <view class="essays_info_wrap">
+                        <view class="essays_title">{{item.dessay_title}}</view>
+                        <view class="essays_src">{{item.dessay_src}}</view>
+                    </view>
+                </navigator>
+                </view>
+                
+            </view>
+            <!-- 下方内容 start -->
+        </block>
+        <block wx:elif="{{tabs[1].isActive}}">
+            <view class="every_tab">
+                <navigator class="essays_item"
+                wx:for="{{essayList[0].essays}}"
+                wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id={{item.dessay_id}}">
+                    <!-- 左侧图片 -->
+                    <view class="essays_img_wrap">
+                        <image mode="widthFix" src="{{item.dessay_img}}"/>
+                    </view>
+                    <!-- 右侧标题 -->
+                    <view class="essays_info_wrap">
+                        <view class="essays_title">{{item.dessay_title}}</view>
+                        <view class="essays_src">{{item.dessay_src}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:elif="{{tabs[2].isActive}}">
+            <view class="every_tab">
+                <navigator class="essays_item"
+                wx:for="{{essayList[1].essays}}"
+                wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id={{item.dessay_id}}">
+                    <!-- 左侧图片 -->
+                    <view class="essays_img_wrap">
+                        <image mode="widthFix" src="{{item.dessay_img}}"/>
+                    </view>
+                    <!-- 右侧标题 -->
+                    <view class="essays_info_wrap">
+                        <view class="essays_title">{{item.dessay_title}}</view>
+                        <view class="essays_src">{{item.dessay_src}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:elif="{{tabs[3].isActive}}">
+            <view class="every_tab">
+                <navigator class="essays_item"
+                wx:for="{{essayList[2].essays}}"
+                wx:key="essay_id"
+                url="/pages/essays_detail/index?essay_id={{item.dessay_id}}">
+                    <!-- 左侧图片 -->
+                    <view class="essays_img_wrap">
+                        <image mode="widthFix" src="{{item.dessay_img}}"/>
+                    </view>
+                    <!-- 右侧标题 -->
+                    <view class="essays_info_wrap">
+                        <view class="essays_title">{{item.dessay_title}}</view>
+                        <view class="essays_src">{{item.dessay_src}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </view>
+   
+    <!-- 分类栏 end -->
+
+    <!-- 答题图标 start -->
+   
+ 
+    <view bindtap='adddetial'>
+ 
+        <image class="add_icon" src="https://s2.loli.net/2022/04/23/mbfL95znKMWxs1u.png"></image>
+ 
+    </view>
+ 
+    <!-- 答题图标 end -->
+</view>

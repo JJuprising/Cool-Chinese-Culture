@@ -1,0 +1,52 @@
+<!--pages/essays_detail/index.wxml-->
+
+<view>
+    <view class="essay_title">{{essaysObj.essay_title}}</view>
+
+    <view class="essay_img">
+        <image class="img" mode="widthFix" src="{{essaysObj.essay_img1}}"></image>
+    </view>
+    <view class="essay_detail">{{essaysObj.essay_detail}}</view>
+    <scroll-view scroll-y="true" style="height: 500rpx;border:2rpx solid lightgrey;">
+        <view wx:for="{{comment}}" wx:key="index">
+            <view class="comment">
+                <rich-text class="date">{{item.Date[0]}}/{{item.Date[1]}}/{{item.Date[2]}}</rich-text>
+                <view class="row">
+                    <view class="user">
+                        <image src="{{item.UserInfo.avatarUrl}}" mode="cover" class="userinfo-avatar"></image>
+                        <view><text class="name">{{item.UserInfo.nickName}}</text></view>
+                    </view>
+                    <view class="content">
+                        <textarea cols="30" rows="1" maxlength="100" value="{{item.Content}}" disabled="true" ></textarea>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="btm_tool">
+        <view class="tool_comment">
+            <view wx:if="{{hasUserInfo}}" style="display:flex;">
+                <input type="text" placeholder="评论.." bindinput="getContent" class="input"/>
+                <view class="tool_item">
+                <view>发表</view>
+                <button bindtap="uploadComment"></button>
+                </view>
+            </view>
+            <view wx:else>
+            <button class="button" bindtap="getUserProfile">登录以评论</button>
+            </view>
+        </view>
+
+        <view class="tool_item">
+            <view class="iconfont {{isCollect?'icon-shoucang1':'icon-shoucang'}}" bindtap="handleCollect"></view>
+            <view>收藏</view>
+        </view>
+            
+        <view class="tool_item">
+            <view class="iconfont icon-fenxiang"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view>
+
+    </view>
+</view>

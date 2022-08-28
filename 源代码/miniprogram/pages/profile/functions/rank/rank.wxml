@@ -1,0 +1,16 @@
+<view class="head">
+    <text>*积分榜*</text>
+</view>
+
+
+<view class="board">
+    <view class="rank" style="height:50rpx;">
+    <text class="name" style="margin-top: auto;margin-left: 90rpx;">用户<text class="point">积分</text></text>
+    </view>
+    <view wx:for="{{rankInfo}}" wx:key="index">
+        <view class="rank">
+                <image src="{{item.userInfo.avatarUrl}}" class="pic"></image>
+                <text class="name">{{item.userInfo.nickName}}<text class="point">{{item.Point}}</text></text>
+        </view>
+    </view>
+</view>

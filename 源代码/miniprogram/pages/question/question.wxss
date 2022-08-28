@@ -1,0 +1,84 @@
+
+.back{
+    background-color: lightpink;
+}
+.head{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    line-height: 1cm
+}
+.count{
+    font-weight: light;
+    font-size: smaller;
+    color: rgb(204, 116, 255);
+}
+.question{
+    text-align: left;
+    font-weight: bolder;
+}
+.radio-group {
+    border-bottom: 2rpx solid #ddd;
+    background-color: rgba(135, 250, 212, 0.253);
+  }
+.radio {
+    display: block;
+    border-top: 2rpx solid #ddd;
+    padding: 15rpx;
+
+
+}
+.right{
+    border: 6rpx rgba(21, 255, 0, 0.377) solid;
+    border-radius: 20rpx;
+    height: 400rpx;
+    background-color: rgba(137, 240, 128, 0.199);
+}
+.wrong{
+    border: 6rpx rgba(255, 0, 0, 0.397) solid;
+    border-radius: 20rpx;
+    height: 400rpx;
+    background-color: rgba(240, 128, 128, 0.212);
+}
+.final{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    color: rgba(255, 0, 234, 0.712);
+}
+.tip{
+    font-size: large;
+    text-align: center;
+    font-style: oblique;
+    
+}
+.button1{
+    width: 80%;
+    margin-top: 20rpx;
+    background-color: rgb(186, 255, 122);
+    color: rgba(4, 0, 255, 0.664);
+    border-radius: 98rpx; 
+}
+.button2{
+    width: 80%;
+    margin-top: 20rpx;
+    background-color: orange;
+    color: yellow;
+    border-radius: 98rpx; 
+}
+.button3{
+    width: 80%;
+    margin-top: 20rpx;
+    background-color: rgba(149, 221, 255, 0.384);
+    color: rgb(0, 0, 0);
+    border-radius: 98rpx; 
+}
+.button4{
+    width: 80%;
+    margin-top: 20rpx;
+    background-color: rgb(54, 255, 114);
+    color: rgb(0, 0, 0);
+    border-radius: 98rpx; 
+}

@@ -1,0 +1,27 @@
+<view>
+    <rich-text class="head">我的笔记</rich-text>
+</view>
+<block wx:if="{{doShowNote}}">
+    <scroll-view scroll-y="true" style="height: 800rpx;border:5rpx solid;">
+        <view wx:for="{{notes}}" wx:key="index">
+            <view class="note">
+                <rich-text class="title">标题：{{item.Title}}<rich-text class="date">{{item.Date[0]}}/{{item.Date[1]}}/{{item.Date[2]}}</rich-text></rich-text>
+                <view style="display: flex;">
+                    <textarea cols="30" rows="3" maxlength="100" value="{{item.Content}}" disabled="true" class="content"></textarea>
+                    <button bindtap="deleteNote" data-info="{{item._id}}" class="delete">删除</button>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</block>
+<button bindtap="showNote" class="button1" wx:else>加载笔记</button>
+<view style="height: 10rpx;"></view>
+
+<block>
+    <block wx:if="{{doNewNote}}">
+        <input type="text" bindinput="getTitle" class="text" placeholder="这里输入标题.."/>
+        <textarea name="1" id="1" cols="50" rows="10" maxlength="5000" class="area" bindinput="getContent" placeholder="这里输入内容.."></textarea>
+        <button bindtap="uploadNote" class="button2">上传</button>
+    </block>
+    <button bindtap="newNote" class="button2" wx:else>新的笔记</button>
+</block>

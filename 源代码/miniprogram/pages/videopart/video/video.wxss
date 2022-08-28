@@ -1,0 +1,29 @@
+
+.title{
+    margin-top: 50rpx;
+    padding:0 10rpx;
+    height: 70rpx;
+    display: flex;
+    float: left;
+    font-size: 50rpx;
+    font-weight: bolder;
+    font-family: cursive;
+   
+}
+.video{
+    height: 396rpx;
+
+}
+.detail{
+    border-top:2rpx solid #dedede;
+    margin-top: 50rpx;
+    height: 500rpx;
+    float: left;
+    font-size: 30rpx;
+    font-family: cursive;
+}
+.detailtext{
+    color: #000;
+    font-size: larger;
+
+}

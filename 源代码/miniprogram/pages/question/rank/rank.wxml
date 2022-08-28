@@ -1,0 +1,7 @@
+<view wx:for="{{rankInfo}}" wx:key="index">
+    <view style="border: 1px solid gray;width: 100%;height: 50px;">
+        <image src="{{item.userInfo.avatarUrl}}" style="width: 50px; height: 50px;"></image>
+        <text>{{item.userInfo.nickName}}</text>
+        <text style="float: right;">Point:{{item.Point}}</text>
+    </view>
+</view>

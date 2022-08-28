@@ -1,0 +1,59 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/videopart/video/video",
+    "pages/videopart/video",
+    "pages/like/index",
+    "pages/essays_detail/index",
+    "pages/search/index",  
+    "pages/question/question",
+    "pages/profile/profile",
+    "pages/profile/functions/note/note",
+    "pages/profile/functions/rank/rank",
+    "pages/profile/functions/contact/contact"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "中华文化酷", 
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": { 
+    "color": "#999",
+    "selectedColor": "#ff2b4a",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      { 
+        "pagePath": "pages/index/index",  
+        "text": "文章",
+        "iconPath": "icons/wenzhang.png", 
+        "selectedIconPath": "icons/wenzhang-o.png"  
+      },  
+      {  
+        "pagePath": "pages/videopart/video",
+        "text": "视频",
+        "iconPath": "icons/shipin.png",
+        "selectedIconPath": "icons/shipin-o.png"
+      },
+      {
+        "pagePath": "pages/like/index",
+        "text": "喜爱",
+        "iconPath": "icons/xiai.png",
+        "selectedIconPath": "icons/xiai-o.png"
+      }, 
+      { 
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "icons/wode.png",
+        "selectedIconPath": "icons/wode-o.png"
+      }
+    ]
+  },
+  
+    
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
